@@ -9,14 +9,12 @@ def login(username, password):
         loggedIn = True
     else:
         print("Incorrect Username or Password")
-
 def signUp(newUser, newPass):
     if newUser in User_Pass:
         print("Username already in use!")
     else:
         User_Pass[newUser] = newPass
         print("Account created successfully!")
-
 def createAcc():
     print("Create your account")
     action = input("Login or Sign up?\nType Answer Here: ")
